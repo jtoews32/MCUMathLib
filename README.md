@@ -30,21 +30,25 @@ Under development. Adding some of the following as needed
 * Unit 19 Discount
 * Unit 20 Averages and Estimates
 * Unit 21 Combined Problems with Percents, Averages, and Estimates
+
 ### Section 5 POWERS AND ROOTS
 * Unit 22 Powers
 * Unit 23 Roots
 * Unit 24 Combined Operations with Powers and Roots
 * Unit 25 Metric Measure and Scientific Notation
+
 ### Section 6 MEASURE
 * Unit 26 Length Measure
 * Unit 27 Area Measure
 * Unit 28 Volume and Mass Measure
 * Unit 29 Energy and Temperature Measure
 * Unit 30 Combined Problems in Measure
+
 ### Section 7 RATIO AND PROPORTION
 * Unit 31 Ratio
 * Unit 32 Proportion
 * Unit 33 Combined Problems with Ratio and Proportion
+
 ### Section 8 FORMULAS
 * Unit 34 Representation in Formulas
 * Unit 35 Rearrangement in Formulas
@@ -52,6 +56,7 @@ Under development. Adding some of the following as needed
 * Unit 37 Ohm's Law Formulas
 * Unit 38 Power Formulas
 * Unit 39 Combined Problems on Formulas
+
 ### Section 9 TRIGONOMETRY
 * Unit 40 Right Triangles
 * Unit 41 Trigonometric Functions
