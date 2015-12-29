@@ -28,12 +28,27 @@ __attribute__((always_inline)) inline int addInt( int exp1, int exp2)
 }
 */
 
-int addInt( int exp1, int exp2)
+uint32_t add32(uint32_t exp1, uint32_t exp2)
 {
-	int result;
+	uint32_t result;
 	__asm volatile ("add %0, %1, %2"
-	        :  "=r"(result)
+	        : "=r"(result)
 	        : "r" (exp1), "r" (exp2));
+	return result;
+}
+
+// Multiple two unsigned 32 and return 64 bit result
+uint32_t multU32ret64(uint32_t exp1, uint32_t exp2) {
+	uint32_t r0, r1;
+	__asm volatile (
+			"UMULL       %0, %1, %2, %3"
+			: "=r"(r0),"=r"(r1)
+			: "r" (exp1), "r" (exp2)
+	);
+
+	uint32_t result = r0 << 0;
+	// not finished. needs to handle top bits.
+
 	return result;
 }
 

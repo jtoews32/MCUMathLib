@@ -17,8 +17,8 @@ extern "C" {
 // __attribute__ ((always_inline))  inline int addInt( int  exp1, int exp2);
 
 
-int addInt( int  exp1, int exp2);
-
+uint32_t add32(uint32_t exp1, uint32_t exp2);
+uint32_t multU32ret64(uint32_t exp1, uint32_t exp2)
 
 
 #ifdef __cplusplus

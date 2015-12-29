@@ -48,7 +48,7 @@ int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
 
-	int i = addInt(4, 6);
+	int i = multU32ret64(0xFFFFFFFFu, 0x04u);
 
   /* Write your local variable definition here */
   float test = 123.2323;
