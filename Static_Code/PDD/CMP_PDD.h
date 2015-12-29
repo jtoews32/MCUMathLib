@@ -14,7 +14,7 @@
 
 #if !defined(MCU_ACTIVE)
   // No MCU is active
-  #error CMP PDD library: No derivative is active. Place proper #include with PDD memory map before including PDD library.
+
 #elif \
       !defined(MCU_MK10D10) /* CMP0, CMP1, CMP2 */ && \
       !defined(MCU_MK10D5) /* CMP0, CMP1 */ && \

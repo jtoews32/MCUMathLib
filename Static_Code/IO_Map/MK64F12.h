@@ -59,9 +59,7 @@
 #define MCU_MK64F12
 
 /* Check if another memory map has not been also included */
-#if (defined(MCU_ACTIVE))
-  #error MK64F12 memory map: There is already included another memory map. Only one memory map can be included.
-#endif /* (defined(MCU_ACTIVE)) */
+
 #define MCU_ACTIVE
 
 #include <stdint.h>

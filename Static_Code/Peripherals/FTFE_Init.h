@@ -1,6 +1,6 @@
 /** ###################################################################
  **     Filename    : FTFE_Init.h
- **     Processor   : MK64FN1M0LL12
+ **     Processor   : MK64FN1M0LQ12
  **     Abstract    :
  **          This file implements the FTFE module initialization
  **          according to the Peripheral Initialization settings, and

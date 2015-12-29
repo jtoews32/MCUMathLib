@@ -1,6 +1,6 @@
 /** ###################################################################
  **     Filename    : PORTE_Init.c
- **     Processor   : MK64FN1M0LL12
+ **     Processor   : MK64FN1M0LQ12
  **     Abstract    :
  **          This file implements the PORTE module initialization
  **          according to the Peripheral Initialization settings, and
@@ -166,6 +166,96 @@ void PORTE_Init(void) {
   PORTE_PCR6 = PORTE_PCR6_VALUE_1;
   #endif
 
+  /* Register 'PORTE_PCR7' initialization */
+  #if PORTE_PCR7_MASK_1
+    #if PORTE_PCR7_MASK_1 == 0xFFFFFFFF
+  PORTE_PCR7 = PORTE_PCR7_VALUE_1;
+    #elif PORTE_PCR7_MASK_1 == PORTE_PCR7_VALUE_1
+  PORTE_PCR7 |= PORTE_PCR7_VALUE_1;
+    #elif PORTE_PCR7_VALUE_1 == 0
+  PORTE_PCR7 &= ~PORTE_PCR7_MASK_1;
+    #else
+  PORTE_PCR7 = (PORTE_PCR7 & (~PORTE_PCR7_MASK_1)) | PORTE_PCR7_VALUE_1;
+    #endif
+  #elif defined(PORTE_PCR7_VALUE_1)
+  PORTE_PCR7 = PORTE_PCR7_VALUE_1;
+  #endif
+
+  /* Register 'PORTE_PCR8' initialization */
+  #if PORTE_PCR8_MASK_1
+    #if PORTE_PCR8_MASK_1 == 0xFFFFFFFF
+  PORTE_PCR8 = PORTE_PCR8_VALUE_1;
+    #elif PORTE_PCR8_MASK_1 == PORTE_PCR8_VALUE_1
+  PORTE_PCR8 |= PORTE_PCR8_VALUE_1;
+    #elif PORTE_PCR8_VALUE_1 == 0
+  PORTE_PCR8 &= ~PORTE_PCR8_MASK_1;
+    #else
+  PORTE_PCR8 = (PORTE_PCR8 & (~PORTE_PCR8_MASK_1)) | PORTE_PCR8_VALUE_1;
+    #endif
+  #elif defined(PORTE_PCR8_VALUE_1)
+  PORTE_PCR8 = PORTE_PCR8_VALUE_1;
+  #endif
+
+  /* Register 'PORTE_PCR9' initialization */
+  #if PORTE_PCR9_MASK_1
+    #if PORTE_PCR9_MASK_1 == 0xFFFFFFFF
+  PORTE_PCR9 = PORTE_PCR9_VALUE_1;
+    #elif PORTE_PCR9_MASK_1 == PORTE_PCR9_VALUE_1
+  PORTE_PCR9 |= PORTE_PCR9_VALUE_1;
+    #elif PORTE_PCR9_VALUE_1 == 0
+  PORTE_PCR9 &= ~PORTE_PCR9_MASK_1;
+    #else
+  PORTE_PCR9 = (PORTE_PCR9 & (~PORTE_PCR9_MASK_1)) | PORTE_PCR9_VALUE_1;
+    #endif
+  #elif defined(PORTE_PCR9_VALUE_1)
+  PORTE_PCR9 = PORTE_PCR9_VALUE_1;
+  #endif
+
+  /* Register 'PORTE_PCR10' initialization */
+  #if PORTE_PCR10_MASK_1
+    #if PORTE_PCR10_MASK_1 == 0xFFFFFFFF
+  PORTE_PCR10 = PORTE_PCR10_VALUE_1;
+    #elif PORTE_PCR10_MASK_1 == PORTE_PCR10_VALUE_1
+  PORTE_PCR10 |= PORTE_PCR10_VALUE_1;
+    #elif PORTE_PCR10_VALUE_1 == 0
+  PORTE_PCR10 &= ~PORTE_PCR10_MASK_1;
+    #else
+  PORTE_PCR10 = (PORTE_PCR10 & (~PORTE_PCR10_MASK_1)) | PORTE_PCR10_VALUE_1;
+    #endif
+  #elif defined(PORTE_PCR10_VALUE_1)
+  PORTE_PCR10 = PORTE_PCR10_VALUE_1;
+  #endif
+
+  /* Register 'PORTE_PCR11' initialization */
+  #if PORTE_PCR11_MASK_1
+    #if PORTE_PCR11_MASK_1 == 0xFFFFFFFF
+  PORTE_PCR11 = PORTE_PCR11_VALUE_1;
+    #elif PORTE_PCR11_MASK_1 == PORTE_PCR11_VALUE_1
+  PORTE_PCR11 |= PORTE_PCR11_VALUE_1;
+    #elif PORTE_PCR11_VALUE_1 == 0
+  PORTE_PCR11 &= ~PORTE_PCR11_MASK_1;
+    #else
+  PORTE_PCR11 = (PORTE_PCR11 & (~PORTE_PCR11_MASK_1)) | PORTE_PCR11_VALUE_1;
+    #endif
+  #elif defined(PORTE_PCR11_VALUE_1)
+  PORTE_PCR11 = PORTE_PCR11_VALUE_1;
+  #endif
+
+  /* Register 'PORTE_PCR12' initialization */
+  #if PORTE_PCR12_MASK_1
+    #if PORTE_PCR12_MASK_1 == 0xFFFFFFFF
+  PORTE_PCR12 = PORTE_PCR12_VALUE_1;
+    #elif PORTE_PCR12_MASK_1 == PORTE_PCR12_VALUE_1
+  PORTE_PCR12 |= PORTE_PCR12_VALUE_1;
+    #elif PORTE_PCR12_VALUE_1 == 0
+  PORTE_PCR12 &= ~PORTE_PCR12_MASK_1;
+    #else
+  PORTE_PCR12 = (PORTE_PCR12 & (~PORTE_PCR12_MASK_1)) | PORTE_PCR12_VALUE_1;
+    #endif
+  #elif defined(PORTE_PCR12_VALUE_1)
+  PORTE_PCR12 = PORTE_PCR12_VALUE_1;
+  #endif
+
   /* Register 'PORTE_PCR24' initialization */
   #if PORTE_PCR24_MASK_1
     #if PORTE_PCR24_MASK_1 == 0xFFFFFFFF
@@ -209,6 +299,36 @@ void PORTE_Init(void) {
     #endif
   #elif defined(PORTE_PCR26_VALUE_1)
   PORTE_PCR26 = PORTE_PCR26_VALUE_1;
+  #endif
+
+  /* Register 'PORTE_PCR27' initialization */
+  #if PORTE_PCR27_MASK_1
+    #if PORTE_PCR27_MASK_1 == 0xFFFFFFFF
+  PORTE_PCR27 = PORTE_PCR27_VALUE_1;
+    #elif PORTE_PCR27_MASK_1 == PORTE_PCR27_VALUE_1
+  PORTE_PCR27 |= PORTE_PCR27_VALUE_1;
+    #elif PORTE_PCR27_VALUE_1 == 0
+  PORTE_PCR27 &= ~PORTE_PCR27_MASK_1;
+    #else
+  PORTE_PCR27 = (PORTE_PCR27 & (~PORTE_PCR27_MASK_1)) | PORTE_PCR27_VALUE_1;
+    #endif
+  #elif defined(PORTE_PCR27_VALUE_1)
+  PORTE_PCR27 = PORTE_PCR27_VALUE_1;
+  #endif
+
+  /* Register 'PORTE_PCR28' initialization */
+  #if PORTE_PCR28_MASK_1
+    #if PORTE_PCR28_MASK_1 == 0xFFFFFFFF
+  PORTE_PCR28 = PORTE_PCR28_VALUE_1;
+    #elif PORTE_PCR28_MASK_1 == PORTE_PCR28_VALUE_1
+  PORTE_PCR28 |= PORTE_PCR28_VALUE_1;
+    #elif PORTE_PCR28_VALUE_1 == 0
+  PORTE_PCR28 &= ~PORTE_PCR28_MASK_1;
+    #else
+  PORTE_PCR28 = (PORTE_PCR28 & (~PORTE_PCR28_MASK_1)) | PORTE_PCR28_VALUE_1;
+    #endif
+  #elif defined(PORTE_PCR28_VALUE_1)
+  PORTE_PCR28 = PORTE_PCR28_VALUE_1;
   #endif
 
   /* Register 'PORTE_PCR0' initialization */
@@ -316,6 +436,96 @@ void PORTE_Init(void) {
   PORTE_PCR6 = PORTE_PCR6_VALUE_2;
   #endif
 
+  /* Register 'PORTE_PCR7' initialization */
+  #if PORTE_PCR7_MASK_2
+    #if PORTE_PCR7_MASK_2 == 0xFFFFFFFF
+  PORTE_PCR7 = PORTE_PCR7_VALUE_2;
+    #elif PORTE_PCR7_MASK_2 == PORTE_PCR7_VALUE_2
+  PORTE_PCR7 |= PORTE_PCR7_VALUE_2;
+    #elif PORTE_PCR7_VALUE_2 == 0
+  PORTE_PCR7 &= ~PORTE_PCR7_MASK_2;
+    #else
+  PORTE_PCR7 = (PORTE_PCR7 & (~PORTE_PCR7_MASK_2)) | PORTE_PCR7_VALUE_2;
+    #endif
+  #elif defined(PORTE_PCR7_VALUE_2)
+  PORTE_PCR7 = PORTE_PCR7_VALUE_2;
+  #endif
+
+  /* Register 'PORTE_PCR8' initialization */
+  #if PORTE_PCR8_MASK_2
+    #if PORTE_PCR8_MASK_2 == 0xFFFFFFFF
+  PORTE_PCR8 = PORTE_PCR8_VALUE_2;
+    #elif PORTE_PCR8_MASK_2 == PORTE_PCR8_VALUE_2
+  PORTE_PCR8 |= PORTE_PCR8_VALUE_2;
+    #elif PORTE_PCR8_VALUE_2 == 0
+  PORTE_PCR8 &= ~PORTE_PCR8_MASK_2;
+    #else
+  PORTE_PCR8 = (PORTE_PCR8 & (~PORTE_PCR8_MASK_2)) | PORTE_PCR8_VALUE_2;
+    #endif
+  #elif defined(PORTE_PCR8_VALUE_2)
+  PORTE_PCR8 = PORTE_PCR8_VALUE_2;
+  #endif
+
+  /* Register 'PORTE_PCR9' initialization */
+  #if PORTE_PCR9_MASK_2
+    #if PORTE_PCR9_MASK_2 == 0xFFFFFFFF
+  PORTE_PCR9 = PORTE_PCR9_VALUE_2;
+    #elif PORTE_PCR9_MASK_2 == PORTE_PCR9_VALUE_2
+  PORTE_PCR9 |= PORTE_PCR9_VALUE_2;
+    #elif PORTE_PCR9_VALUE_2 == 0
+  PORTE_PCR9 &= ~PORTE_PCR9_MASK_2;
+    #else
+  PORTE_PCR9 = (PORTE_PCR9 & (~PORTE_PCR9_MASK_2)) | PORTE_PCR9_VALUE_2;
+    #endif
+  #elif defined(PORTE_PCR9_VALUE_2)
+  PORTE_PCR9 = PORTE_PCR9_VALUE_2;
+  #endif
+
+  /* Register 'PORTE_PCR10' initialization */
+  #if PORTE_PCR10_MASK_2
+    #if PORTE_PCR10_MASK_2 == 0xFFFFFFFF
+  PORTE_PCR10 = PORTE_PCR10_VALUE_2;
+    #elif PORTE_PCR10_MASK_2 == PORTE_PCR10_VALUE_2
+  PORTE_PCR10 |= PORTE_PCR10_VALUE_2;
+    #elif PORTE_PCR10_VALUE_2 == 0
+  PORTE_PCR10 &= ~PORTE_PCR10_MASK_2;
+    #else
+  PORTE_PCR10 = (PORTE_PCR10 & (~PORTE_PCR10_MASK_2)) | PORTE_PCR10_VALUE_2;
+    #endif
+  #elif defined(PORTE_PCR10_VALUE_2)
+  PORTE_PCR10 = PORTE_PCR10_VALUE_2;
+  #endif
+
+  /* Register 'PORTE_PCR11' initialization */
+  #if PORTE_PCR11_MASK_2
+    #if PORTE_PCR11_MASK_2 == 0xFFFFFFFF
+  PORTE_PCR11 = PORTE_PCR11_VALUE_2;
+    #elif PORTE_PCR11_MASK_2 == PORTE_PCR11_VALUE_2
+  PORTE_PCR11 |= PORTE_PCR11_VALUE_2;
+    #elif PORTE_PCR11_VALUE_2 == 0
+  PORTE_PCR11 &= ~PORTE_PCR11_MASK_2;
+    #else
+  PORTE_PCR11 = (PORTE_PCR11 & (~PORTE_PCR11_MASK_2)) | PORTE_PCR11_VALUE_2;
+    #endif
+  #elif defined(PORTE_PCR11_VALUE_2)
+  PORTE_PCR11 = PORTE_PCR11_VALUE_2;
+  #endif
+
+  /* Register 'PORTE_PCR12' initialization */
+  #if PORTE_PCR12_MASK_2
+    #if PORTE_PCR12_MASK_2 == 0xFFFFFFFF
+  PORTE_PCR12 = PORTE_PCR12_VALUE_2;
+    #elif PORTE_PCR12_MASK_2 == PORTE_PCR12_VALUE_2
+  PORTE_PCR12 |= PORTE_PCR12_VALUE_2;
+    #elif PORTE_PCR12_VALUE_2 == 0
+  PORTE_PCR12 &= ~PORTE_PCR12_MASK_2;
+    #else
+  PORTE_PCR12 = (PORTE_PCR12 & (~PORTE_PCR12_MASK_2)) | PORTE_PCR12_VALUE_2;
+    #endif
+  #elif defined(PORTE_PCR12_VALUE_2)
+  PORTE_PCR12 = PORTE_PCR12_VALUE_2;
+  #endif
+
   /* Register 'PORTE_PCR24' initialization */
   #if PORTE_PCR24_MASK_2
     #if PORTE_PCR24_MASK_2 == 0xFFFFFFFF
@@ -359,6 +569,36 @@ void PORTE_Init(void) {
     #endif
   #elif defined(PORTE_PCR26_VALUE_2)
   PORTE_PCR26 = PORTE_PCR26_VALUE_2;
+  #endif
+
+  /* Register 'PORTE_PCR27' initialization */
+  #if PORTE_PCR27_MASK_2
+    #if PORTE_PCR27_MASK_2 == 0xFFFFFFFF
+  PORTE_PCR27 = PORTE_PCR27_VALUE_2;
+    #elif PORTE_PCR27_MASK_2 == PORTE_PCR27_VALUE_2
+  PORTE_PCR27 |= PORTE_PCR27_VALUE_2;
+    #elif PORTE_PCR27_VALUE_2 == 0
+  PORTE_PCR27 &= ~PORTE_PCR27_MASK_2;
+    #else
+  PORTE_PCR27 = (PORTE_PCR27 & (~PORTE_PCR27_MASK_2)) | PORTE_PCR27_VALUE_2;
+    #endif
+  #elif defined(PORTE_PCR27_VALUE_2)
+  PORTE_PCR27 = PORTE_PCR27_VALUE_2;
+  #endif
+
+  /* Register 'PORTE_PCR28' initialization */
+  #if PORTE_PCR28_MASK_2
+    #if PORTE_PCR28_MASK_2 == 0xFFFFFFFF
+  PORTE_PCR28 = PORTE_PCR28_VALUE_2;
+    #elif PORTE_PCR28_MASK_2 == PORTE_PCR28_VALUE_2
+  PORTE_PCR28 |= PORTE_PCR28_VALUE_2;
+    #elif PORTE_PCR28_VALUE_2 == 0
+  PORTE_PCR28 &= ~PORTE_PCR28_MASK_2;
+    #else
+  PORTE_PCR28 = (PORTE_PCR28 & (~PORTE_PCR28_MASK_2)) | PORTE_PCR28_VALUE_2;
+    #endif
+  #elif defined(PORTE_PCR28_VALUE_2)
+  PORTE_PCR28 = PORTE_PCR28_VALUE_2;
   #endif
 }
 

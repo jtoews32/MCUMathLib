@@ -1,6 +1,6 @@
 /** ###################################################################
  **     Filename    : FB_Init.c
- **     Processor   : MK64FN1M0LL12
+ **     Processor   : MK64FN1M0LQ12
  **     Abstract    :
  **          This file implements the FB module initialization
  **          according to the Peripheral Initialization settings, and
@@ -76,6 +76,11 @@ void FB_Init(void) {
   FB_CSAR2 = FB_CSAR2_VALUE;
   #endif
 
+  /* Register 'FB_CSAR3' initialization */
+  #ifdef FB_CSAR3_VALUE
+  FB_CSAR3 = FB_CSAR3_VALUE;
+  #endif
+
   /* Register 'FB_CSAR4' initialization */
   #ifdef FB_CSAR4_VALUE
   FB_CSAR4 = FB_CSAR4_VALUE;
@@ -129,6 +134,21 @@ void FB_Init(void) {
     #endif
   #elif defined(FB_CSCR2_VALUE)
   FB_CSCR2 = FB_CSCR2_VALUE;
+  #endif
+
+  /* Register 'FB_CSCR3' initialization */
+  #if FB_CSCR3_MASK
+    #if FB_CSCR3_MASK == 0xFFFFFFFF
+  FB_CSCR3 = FB_CSCR3_VALUE;
+    #elif FB_CSCR3_MASK == FB_CSCR3_VALUE
+  FB_CSCR3 |= FB_CSCR3_VALUE;
+    #elif FB_CSCR3_VALUE == 0
+  FB_CSCR3 &= ~FB_CSCR3_MASK;
+    #else
+  FB_CSCR3 = (FB_CSCR3 & (~FB_CSCR3_MASK)) | FB_CSCR3_VALUE;
+    #endif
+  #elif defined(FB_CSCR3_VALUE)
+  FB_CSCR3 = FB_CSCR3_VALUE;
   #endif
 
   /* Register 'FB_CSCR4' initialization */
@@ -204,6 +224,21 @@ void FB_Init(void) {
     #endif
   #elif defined(FB_CSMR2_VALUE)
   FB_CSMR2 = FB_CSMR2_VALUE;
+  #endif
+
+  /* Register 'FB_CSMR3' initialization */
+  #if FB_CSMR3_MASK
+    #if FB_CSMR3_MASK == 0xFFFFFFFF
+  FB_CSMR3 = FB_CSMR3_VALUE;
+    #elif FB_CSMR3_MASK == FB_CSMR3_VALUE
+  FB_CSMR3 |= FB_CSMR3_VALUE;
+    #elif FB_CSMR3_VALUE == 0
+  FB_CSMR3 &= ~FB_CSMR3_MASK;
+    #else
+  FB_CSMR3 = (FB_CSMR3 & (~FB_CSMR3_MASK)) | FB_CSMR3_VALUE;
+    #endif
+  #elif defined(FB_CSMR3_VALUE)
+  FB_CSMR3 = FB_CSMR3_VALUE;
   #endif
 
   /* Register 'FB_CSMR4' initialization */

@@ -335,7 +335,12 @@ PE_DEBUGHALT();
             </boolgroup>
           </group>
           <group name="MemoryArea1">
-            <boolgroup name="ROM/RAM Area" v="Disabled" />
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_text_00000198" />
+              <Qualifier v="RX" />
+              <Address v="408" />
+              <Size v="616" />
+            </boolgroup>
           </group>
           <group name="MemoryArea2">
             <boolgroup name="ROM/RAM Area" v="Enabled">

@@ -1,6 +1,6 @@
 /** ###################################################################
  **     Filename    : NVIC_Init.c
- **     Processor   : MK64FN1M0LL12
+ **     Processor   : MK64FN1M0LQ12
  **     Abstract    :
  **          This file implements the NVIC module initialization
  **          according to the Peripheral Initialization settings, and
@@ -419,6 +419,11 @@ void NVIC_Init(void) {
   /* Register 'NVICIP71' initialization */
   #ifdef NVICIP71_VALUE
   NVICIP71 = NVICIP71_VALUE;
+  #endif
+
+  /* Register 'NVICIP72' initialization */
+  #ifdef NVICIP72_VALUE
+  NVICIP72 = NVICIP72_VALUE;
   #endif
 
   /* Register 'NVICIP73' initialization */

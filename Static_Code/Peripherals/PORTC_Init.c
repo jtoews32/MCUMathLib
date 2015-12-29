@@ -1,6 +1,6 @@
 /** ###################################################################
  **     Filename    : PORTC_Init.c
- **     Processor   : MK64FN1M0LL12
+ **     Processor   : MK64FN1M0LQ12
  **     Abstract    :
  **          This file implements the PORTC module initialization
  **          according to the Peripheral Initialization settings, and
@@ -346,6 +346,21 @@ void PORTC_Init(void) {
   PORTC_PCR18 = PORTC_PCR18_VALUE_1;
   #endif
 
+  /* Register 'PORTC_PCR19' initialization */
+  #if PORTC_PCR19_MASK_1
+    #if PORTC_PCR19_MASK_1 == 0xFFFFFFFF
+  PORTC_PCR19 = PORTC_PCR19_VALUE_1;
+    #elif PORTC_PCR19_MASK_1 == PORTC_PCR19_VALUE_1
+  PORTC_PCR19 |= PORTC_PCR19_VALUE_1;
+    #elif PORTC_PCR19_VALUE_1 == 0
+  PORTC_PCR19 &= ~PORTC_PCR19_MASK_1;
+    #else
+  PORTC_PCR19 = (PORTC_PCR19 & (~PORTC_PCR19_MASK_1)) | PORTC_PCR19_VALUE_1;
+    #endif
+  #elif defined(PORTC_PCR19_VALUE_1)
+  PORTC_PCR19 = PORTC_PCR19_VALUE_1;
+  #endif
+
   /* Register 'PORTC_PCR0' initialization */
   #if PORTC_PCR0_MASK_2
     #if PORTC_PCR0_MASK_2 == 0xFFFFFFFF
@@ -629,6 +644,21 @@ void PORTC_Init(void) {
     #endif
   #elif defined(PORTC_PCR18_VALUE_2)
   PORTC_PCR18 = PORTC_PCR18_VALUE_2;
+  #endif
+
+  /* Register 'PORTC_PCR19' initialization */
+  #if PORTC_PCR19_MASK_2
+    #if PORTC_PCR19_MASK_2 == 0xFFFFFFFF
+  PORTC_PCR19 = PORTC_PCR19_VALUE_2;
+    #elif PORTC_PCR19_MASK_2 == PORTC_PCR19_VALUE_2
+  PORTC_PCR19 |= PORTC_PCR19_VALUE_2;
+    #elif PORTC_PCR19_VALUE_2 == 0
+  PORTC_PCR19 &= ~PORTC_PCR19_MASK_2;
+    #else
+  PORTC_PCR19 = (PORTC_PCR19 & (~PORTC_PCR19_MASK_2)) | PORTC_PCR19_VALUE_2;
+    #endif
+  #elif defined(PORTC_PCR19_VALUE_2)
+  PORTC_PCR19 = PORTC_PCR19_VALUE_2;
   #endif
 }
 

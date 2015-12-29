@@ -1,6 +1,6 @@
 /** ###################################################################
  **     Filename    : CMP0_Init.c
- **     Processor   : MK64FN1M0LL12
+ **     Processor   : MK64FN1M0LQ12
  **     Abstract    :
  **          This file implements the CMP0 module initialization
  **          according to the Peripheral Initialization settings, and

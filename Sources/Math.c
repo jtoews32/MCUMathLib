@@ -1,42 +1,87 @@
 #include "Math.h"
-
-/*
-
 #include "Init_Config.h"
-#include "PDD_Includes.h"
+
 #include "Events.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
 #include "IO_Map.h"
 
- */
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-register unsigned int reg_apsr 			__asm("apsr");
-register unsigned int reg_basepri 		__asm("basepri");
-register unsigned int reg_basepri_max 	__asm("basepri_max");
-register unsigned int reg_control 		__asm("control");
-register unsigned int reg_eapsr 		__asm("eapsr");
-register unsigned int reg_epsr 			__asm("epsr");
-register unsigned int reg_faultmask	 	__asm("faultmask");
-register unsigned int reg_iapsr 		__asm("iapsr");
-register unsigned int reg_iepsr 		__asm("iepsr");
-register unsigned int reg_ipsr 			__asm("ipsr");
-register unsigned int reg_msp 			__asm("msp");
-register unsigned int reg_primask 		__asm("primask");
-register unsigned int reg_psp 			__asm("psp");
-register unsigned int reg_spr 			__asm("psr");
+// static
+/*
+__attribute__((always_inline)) inline int addInt( int exp1, int exp2)
+{
+	int result;
 
+	int test= 0, new = 0;
+
+	__asm volatile ("add %0, %1, %2"
+	        :  "=r"(result)
+	        : "r" (test), "r" (new));
+
+	return result;
+}
+*/
+
+int addInt( int exp1, int exp2)
+{
+	int result;
+	__asm volatile ("add %0, %1, %2"
+	        :  "=r"(result)
+	        : "r" (exp1), "r" (exp2));
+	return result;
+}
+
+
+
+
+
+
+
+
+
+//float32_t value;
+uint8_t value;
+void useRegisters() {
+
+	/*
+	q7_t *pSrc *pDst;
+	int32_t x;
+	x = *__SIMD32(pSrc)++;
+*/
+
+	//register unsigned int reg_primask 		__asm("primask");
+
+	/*
+	register unsigned int reg_apsr 			__asm("apsr");
+	register unsigned int reg_basepri 		__asm("basepri");
+	register unsigned int reg_basepri_max 	__asm("basepri_max");
+	register unsigned int reg_control 		__asm("control");
+	register unsigned int reg_eapsr 		__asm("eapsr");
+	register unsigned int reg_epsr 			__asm("epsr");
+	register unsigned int reg_faultmask	 	__asm("faultmask");
+	register unsigned int reg_iapsr 		__asm("iapsr");
+	register unsigned int reg_iepsr 		__asm("iepsr");
+	register unsigned int reg_ipsr 			__asm("ipsr");
+	register unsigned int reg_msp 			__asm("msp");
+	register unsigned int reg_primask 		__asm("primask");
+	register unsigned int reg_psp 			__asm("psp");
+	register unsigned int reg_spr 			__asm("psr");
+	*/
+}
+
+/*
 // test some basic equations.
 __attribute__((always_inline)) static inline signed long add( signed long exp1,  signed long exp2)
 {
 	signed long result;
 
-	/*
+
     int src = 1;
      int dst;
 
@@ -47,7 +92,7 @@ __attribute__((always_inline)) static inline signed long add( signed long exp1, 
          : "r" (src));
 
      printf("%d\n", dst);
-     */
+
 
 	int test= 0, new = 0;
 
@@ -59,16 +104,15 @@ __attribute__((always_inline)) static inline signed long add( signed long exp1, 
 
 
 
-	/*
 	__asm volatile ( "adds %0, %1, %2"
 			: "=r" ( result )
 			: "r" ( exp1 ), "r" ( exp2 )
 		);
-	*/
+
 
 	return result;
 }
-
+*/
 /*
  *
  *  VADD.F32  {Sd,} Sn, Sm
@@ -81,19 +125,18 @@ __attribute__((always_inline)) static inline signed long add( signed long exp1, 
 
 
 
-
+/*
 __attribute__( ( always_inline ) ) static inline unsigned char subtract( signed long exp1,  signed long exp2)
 {
-	/*
+
 	uint8_t ucReturn;
 
 	__asm volatile ( "clz %0, %1" : "=r" ( ucReturn ) : "r" ( ulBitmap ) );
 	return ucReturn;
-	*/
 
 	return 1;
 }
-
+*/
 
 
 /*

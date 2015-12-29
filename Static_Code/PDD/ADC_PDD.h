@@ -14,7 +14,7 @@
 
 #if !defined(MCU_ACTIVE)
   // No MCU is active
-  #error ADC PDD library: No derivative is active. Place proper #include with PDD memory map before including PDD library.
+
 #elif \
       !defined(MCU_MK10D10) /* ADC0, ADC1 */ && \
       !defined(MCU_MK10D5) /* ADC0 */ && \

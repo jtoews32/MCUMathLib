@@ -1,6 +1,6 @@
 /** ###################################################################
 **      Filename    : CPU_Init.h
-**      Processor   : MK64FN1M0VLL12
+**      Processor   : MK64FN1M0VLQ12
 **      Version     : 1.0
 ** 
 **     Copyright : 1997 - 2014 Freescale Semiconductor, Inc. 
@@ -74,7 +74,7 @@ extern const tVectorTable __vect_table;
 
 /*
 ** ===================================================================
-**     Method      :  __init_hardware (component MK64FN1M0LL12)
+**     Method      :  __init_hardware (component MK64FN1M0LQ12)
 **
 **     Description :
 **         This method is called from the _startup() function and 
@@ -87,7 +87,7 @@ void __init_hardware(void);
 
 /*
 ** ===================================================================
-**     Method      :  PE_low_level_init (component MK64FN1M0LL12)
+**     Method      :  PE_low_level_init (component MK64FN1M0LQ12)
 **
 **     Description :
 **         Initializes components and provides common register 
@@ -102,7 +102,7 @@ void CPU_SetClockConfigGenMode(LDD_TClockConfiguration ConfigID);
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_SetClockConfiguration (component MK64FN1M0LL12)
+**     Method      :  Cpu_SetClockConfiguration (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -122,7 +122,7 @@ LDD_TError CPU_SetClockConfiguration(LDD_TClockConfiguration ModeID);
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_GetClockConfiguration (component MK64FN1M0LL12)
+**     Method      :  Cpu_GetClockConfiguration (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -139,7 +139,7 @@ uint8_t CPU_GetClockConfiguration(void);
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_SetOperationMode (component MK64FN1M0LL12)
+**     Method      :  Cpu_SetOperationMode (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -174,7 +174,7 @@ LDD_TError CPU_SetOperationMode(LDD_TDriverOperationMode OperationMode, LDD_TCal
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_EnableInt (component MK64FN1M0LL12)
+**     Method      :  Cpu_EnableInt (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -187,7 +187,7 @@ void CPU_EnableInt(void);
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_DisableInt (component MK64FN1M0LL12)
+**     Method      :  Cpu_DisableInt (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -200,7 +200,7 @@ void CPU_DisableInt(void);
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_MCGAutoTrim (component MK64FN1M0LL12)
+**     Method      :  Cpu_MCGAutoTrim (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -235,7 +235,7 @@ LDD_TError CPU_MCGAutoTrim(uint8_t ClockSelect);
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_VLPModeEnable (component MK64FN1M0LL12)
+**     Method      :  Cpu_VLPModeEnable (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -260,7 +260,7 @@ LDD_TError CPU_VLPModeEnable(void);
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_VLPModeDisable (component MK64FN1M0LL12)
+**     Method      :  Cpu_VLPModeDisable (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -284,7 +284,7 @@ LDD_TError CPU_VLPModeDisable(void);
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_SystemReset (component MK64FN1M0LL12)
+**     Method      :  Cpu_SystemReset (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief

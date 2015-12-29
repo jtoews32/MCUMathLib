@@ -1,6 +1,6 @@
 /** ###################################################################
 **      Filename    : CPU_Init.c
-**      Processor   : MK64FN1M0VLL12
+**      Processor   : MK64FN1M0VLQ12
 **      Version     : 1.0
 **      Abstract    :
 **         This file implements the MCU initialization and CPU component runtime methods.
@@ -258,7 +258,7 @@ static const CPU_TClockGenRegs *const CPU_ClockGenModeRegs[CPU_MCG_MODES] = {
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_SetBASEPRI (component MK64FN1M0LL12)
+**     Method      :  Cpu_SetBASEPRI (component MK64FN1M0LQ12)
 **
 **     Description :
 **         This method sets the BASEPRI core register.
@@ -287,7 +287,7 @@ __asm CPU_SetBASEPRI(uint32_t Level) {
 
 /*
 ** ===================================================================
-**     Method      :  __init_hardware (component MK64FN1M0LL12)
+**     Method      :  __init_hardware (component MK64FN1M0LQ12)
 **
 **     Description :
 **         This method is called from the _startup() function and 
@@ -397,7 +397,7 @@ PEX_ENTRYPOINT_FUNCTION_TYPE PEX_ENTRYPOINT_FUNCTION()
 
 /*
 ** ===================================================================
-**     Method      :  PE_low_level_init (component MK64FN1M0LL12)
+**     Method      :  PE_low_level_init (component MK64FN1M0LQ12)
 **
 **     Description :
 **         This method is internal. It is used by Processor Expert only.
@@ -735,7 +735,7 @@ void CPU_SetClockConfigGenMode(LDD_TClockConfiguration ConfigID)
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_SetClockConfiguration (component MK64FN1M0LL12)
+**     Method      :  Cpu_SetClockConfiguration (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -834,7 +834,7 @@ LDD_TError CPU_SetClockConfiguration(LDD_TClockConfiguration ModeID)
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_GetClockConfiguration (component MK64FN1M0LL12)
+**     Method      :  Cpu_GetClockConfiguration (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -858,7 +858,7 @@ LDD_TClockConfiguration CPU_GetClockConfiguration(void)
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_SetOperationMode (component MK64FN1M0LL12)
+**     Method      :  Cpu_SetOperationMode (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -1022,7 +1022,7 @@ LDD_TError CPU_SetOperationMode(LDD_TDriverOperationMode OperationMode, LDD_TCal
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_EnableInt (component MK64FN1M0LL12)
+**     Method      :  Cpu_EnableInt (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -1038,7 +1038,7 @@ void CPU_EnableInt(void)
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_DisableInt (component MK64FN1M0LL12)
+**     Method      :  Cpu_DisableInt (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -1054,7 +1054,7 @@ void CPU_DisableInt(void)
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_MCGAutoTrim (component MK64FN1M0LL12)
+**     Method      :  Cpu_MCGAutoTrim (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -1130,7 +1130,7 @@ LDD_TError CPU_MCGAutoTrim(uint8_t ClockSelect)
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_VLPModeEnable (component MK64FN1M0LL12)
+**     Method      :  Cpu_VLPModeEnable (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -1172,7 +1172,7 @@ LDD_TError CPU_VLPModeEnable(void)
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_VLPModeDisable (component MK64FN1M0LL12)
+**     Method      :  Cpu_VLPModeDisable (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief
@@ -1210,7 +1210,7 @@ LDD_TError CPU_VLPModeDisable(void)
 
 /*
 ** ===================================================================
-**     Method      :  Cpu_SystemReset (component MK64FN1M0LL12)
+**     Method      :  Cpu_SystemReset (component MK64FN1M0LQ12)
 */
 /*!
 **     @brief

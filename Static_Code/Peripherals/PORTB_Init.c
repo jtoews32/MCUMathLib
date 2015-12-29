@@ -1,6 +1,6 @@
 /** ###################################################################
  **     Filename    : PORTB_Init.c
- **     Processor   : MK64FN1M0LL12
+ **     Processor   : MK64FN1M0LQ12
  **     Abstract    :
  **          This file implements the PORTB module initialization
  **          according to the Peripheral Initialization settings, and
@@ -119,6 +119,81 @@ void PORTB_Init(void) {
     #endif
   #elif defined(PORTB_PCR3_VALUE_1)
   PORTB_PCR3 = PORTB_PCR3_VALUE_1;
+  #endif
+
+  /* Register 'PORTB_PCR4' initialization */
+  #if PORTB_PCR4_MASK_1
+    #if PORTB_PCR4_MASK_1 == 0xFFFFFFFF
+  PORTB_PCR4 = PORTB_PCR4_VALUE_1;
+    #elif PORTB_PCR4_MASK_1 == PORTB_PCR4_VALUE_1
+  PORTB_PCR4 |= PORTB_PCR4_VALUE_1;
+    #elif PORTB_PCR4_VALUE_1 == 0
+  PORTB_PCR4 &= ~PORTB_PCR4_MASK_1;
+    #else
+  PORTB_PCR4 = (PORTB_PCR4 & (~PORTB_PCR4_MASK_1)) | PORTB_PCR4_VALUE_1;
+    #endif
+  #elif defined(PORTB_PCR4_VALUE_1)
+  PORTB_PCR4 = PORTB_PCR4_VALUE_1;
+  #endif
+
+  /* Register 'PORTB_PCR5' initialization */
+  #if PORTB_PCR5_MASK_1
+    #if PORTB_PCR5_MASK_1 == 0xFFFFFFFF
+  PORTB_PCR5 = PORTB_PCR5_VALUE_1;
+    #elif PORTB_PCR5_MASK_1 == PORTB_PCR5_VALUE_1
+  PORTB_PCR5 |= PORTB_PCR5_VALUE_1;
+    #elif PORTB_PCR5_VALUE_1 == 0
+  PORTB_PCR5 &= ~PORTB_PCR5_MASK_1;
+    #else
+  PORTB_PCR5 = (PORTB_PCR5 & (~PORTB_PCR5_MASK_1)) | PORTB_PCR5_VALUE_1;
+    #endif
+  #elif defined(PORTB_PCR5_VALUE_1)
+  PORTB_PCR5 = PORTB_PCR5_VALUE_1;
+  #endif
+
+  /* Register 'PORTB_PCR6' initialization */
+  #if PORTB_PCR6_MASK_1
+    #if PORTB_PCR6_MASK_1 == 0xFFFFFFFF
+  PORTB_PCR6 = PORTB_PCR6_VALUE_1;
+    #elif PORTB_PCR6_MASK_1 == PORTB_PCR6_VALUE_1
+  PORTB_PCR6 |= PORTB_PCR6_VALUE_1;
+    #elif PORTB_PCR6_VALUE_1 == 0
+  PORTB_PCR6 &= ~PORTB_PCR6_MASK_1;
+    #else
+  PORTB_PCR6 = (PORTB_PCR6 & (~PORTB_PCR6_MASK_1)) | PORTB_PCR6_VALUE_1;
+    #endif
+  #elif defined(PORTB_PCR6_VALUE_1)
+  PORTB_PCR6 = PORTB_PCR6_VALUE_1;
+  #endif
+
+  /* Register 'PORTB_PCR7' initialization */
+  #if PORTB_PCR7_MASK_1
+    #if PORTB_PCR7_MASK_1 == 0xFFFFFFFF
+  PORTB_PCR7 = PORTB_PCR7_VALUE_1;
+    #elif PORTB_PCR7_MASK_1 == PORTB_PCR7_VALUE_1
+  PORTB_PCR7 |= PORTB_PCR7_VALUE_1;
+    #elif PORTB_PCR7_VALUE_1 == 0
+  PORTB_PCR7 &= ~PORTB_PCR7_MASK_1;
+    #else
+  PORTB_PCR7 = (PORTB_PCR7 & (~PORTB_PCR7_MASK_1)) | PORTB_PCR7_VALUE_1;
+    #endif
+  #elif defined(PORTB_PCR7_VALUE_1)
+  PORTB_PCR7 = PORTB_PCR7_VALUE_1;
+  #endif
+
+  /* Register 'PORTB_PCR8' initialization */
+  #if PORTB_PCR8_MASK_1
+    #if PORTB_PCR8_MASK_1 == 0xFFFFFFFF
+  PORTB_PCR8 = PORTB_PCR8_VALUE_1;
+    #elif PORTB_PCR8_MASK_1 == PORTB_PCR8_VALUE_1
+  PORTB_PCR8 |= PORTB_PCR8_VALUE_1;
+    #elif PORTB_PCR8_VALUE_1 == 0
+  PORTB_PCR8 &= ~PORTB_PCR8_MASK_1;
+    #else
+  PORTB_PCR8 = (PORTB_PCR8 & (~PORTB_PCR8_MASK_1)) | PORTB_PCR8_VALUE_1;
+    #endif
+  #elif defined(PORTB_PCR8_VALUE_1)
+  PORTB_PCR8 = PORTB_PCR8_VALUE_1;
   #endif
 
   /* Register 'PORTB_PCR9' initialization */
@@ -344,6 +419,81 @@ void PORTB_Init(void) {
     #endif
   #elif defined(PORTB_PCR3_VALUE_2)
   PORTB_PCR3 = PORTB_PCR3_VALUE_2;
+  #endif
+
+  /* Register 'PORTB_PCR4' initialization */
+  #if PORTB_PCR4_MASK_2
+    #if PORTB_PCR4_MASK_2 == 0xFFFFFFFF
+  PORTB_PCR4 = PORTB_PCR4_VALUE_2;
+    #elif PORTB_PCR4_MASK_2 == PORTB_PCR4_VALUE_2
+  PORTB_PCR4 |= PORTB_PCR4_VALUE_2;
+    #elif PORTB_PCR4_VALUE_2 == 0
+  PORTB_PCR4 &= ~PORTB_PCR4_MASK_2;
+    #else
+  PORTB_PCR4 = (PORTB_PCR4 & (~PORTB_PCR4_MASK_2)) | PORTB_PCR4_VALUE_2;
+    #endif
+  #elif defined(PORTB_PCR4_VALUE_2)
+  PORTB_PCR4 = PORTB_PCR4_VALUE_2;
+  #endif
+
+  /* Register 'PORTB_PCR5' initialization */
+  #if PORTB_PCR5_MASK_2
+    #if PORTB_PCR5_MASK_2 == 0xFFFFFFFF
+  PORTB_PCR5 = PORTB_PCR5_VALUE_2;
+    #elif PORTB_PCR5_MASK_2 == PORTB_PCR5_VALUE_2
+  PORTB_PCR5 |= PORTB_PCR5_VALUE_2;
+    #elif PORTB_PCR5_VALUE_2 == 0
+  PORTB_PCR5 &= ~PORTB_PCR5_MASK_2;
+    #else
+  PORTB_PCR5 = (PORTB_PCR5 & (~PORTB_PCR5_MASK_2)) | PORTB_PCR5_VALUE_2;
+    #endif
+  #elif defined(PORTB_PCR5_VALUE_2)
+  PORTB_PCR5 = PORTB_PCR5_VALUE_2;
+  #endif
+
+  /* Register 'PORTB_PCR6' initialization */
+  #if PORTB_PCR6_MASK_2
+    #if PORTB_PCR6_MASK_2 == 0xFFFFFFFF
+  PORTB_PCR6 = PORTB_PCR6_VALUE_2;
+    #elif PORTB_PCR6_MASK_2 == PORTB_PCR6_VALUE_2
+  PORTB_PCR6 |= PORTB_PCR6_VALUE_2;
+    #elif PORTB_PCR6_VALUE_2 == 0
+  PORTB_PCR6 &= ~PORTB_PCR6_MASK_2;
+    #else
+  PORTB_PCR6 = (PORTB_PCR6 & (~PORTB_PCR6_MASK_2)) | PORTB_PCR6_VALUE_2;
+    #endif
+  #elif defined(PORTB_PCR6_VALUE_2)
+  PORTB_PCR6 = PORTB_PCR6_VALUE_2;
+  #endif
+
+  /* Register 'PORTB_PCR7' initialization */
+  #if PORTB_PCR7_MASK_2
+    #if PORTB_PCR7_MASK_2 == 0xFFFFFFFF
+  PORTB_PCR7 = PORTB_PCR7_VALUE_2;
+    #elif PORTB_PCR7_MASK_2 == PORTB_PCR7_VALUE_2
+  PORTB_PCR7 |= PORTB_PCR7_VALUE_2;
+    #elif PORTB_PCR7_VALUE_2 == 0
+  PORTB_PCR7 &= ~PORTB_PCR7_MASK_2;
+    #else
+  PORTB_PCR7 = (PORTB_PCR7 & (~PORTB_PCR7_MASK_2)) | PORTB_PCR7_VALUE_2;
+    #endif
+  #elif defined(PORTB_PCR7_VALUE_2)
+  PORTB_PCR7 = PORTB_PCR7_VALUE_2;
+  #endif
+
+  /* Register 'PORTB_PCR8' initialization */
+  #if PORTB_PCR8_MASK_2
+    #if PORTB_PCR8_MASK_2 == 0xFFFFFFFF
+  PORTB_PCR8 = PORTB_PCR8_VALUE_2;
+    #elif PORTB_PCR8_MASK_2 == PORTB_PCR8_VALUE_2
+  PORTB_PCR8 |= PORTB_PCR8_VALUE_2;
+    #elif PORTB_PCR8_VALUE_2 == 0
+  PORTB_PCR8 &= ~PORTB_PCR8_MASK_2;
+    #else
+  PORTB_PCR8 = (PORTB_PCR8 & (~PORTB_PCR8_MASK_2)) | PORTB_PCR8_VALUE_2;
+    #endif
+  #elif defined(PORTB_PCR8_VALUE_2)
+  PORTB_PCR8 = PORTB_PCR8_VALUE_2;
   #endif
 
   /* Register 'PORTB_PCR9' initialization */

@@ -1,6 +1,6 @@
 /** ###################################################################
 **      Filename    : Vectors_Config.h
-**      Processor   : MK64FN1M0VLL12
+**      Processor   : MK64FN1M0VLQ12
 **      Version     : 1.00
 ** 
 **     Copyright : 1997 - 2014 Freescale Semiconductor, Inc. 
@@ -49,6 +49,9 @@
 /* MODULE Vectors_Config.h */
   
 #include "Cpu.h"
+#include "LED1.h"
+#include "LEDpin1.h"
+#include "BitIoLdd1.h"
 #include "Events.h"
 
 #ifdef __cplusplus
@@ -146,7 +149,7 @@ extern "C" {
 #define VECTOR_85         (tIsrFunc)&UnhandledInterrupt         /* 0x55 -    ivINT_UART5_ERR                unused by PE */
 #define VECTOR_86         (tIsrFunc)&UnhandledInterrupt         /* 0x56 -    ivINT_CMP2                     unused by PE */
 #define VECTOR_87         (tIsrFunc)&UnhandledInterrupt         /* 0x57 -    ivINT_FTM3                     unused by PE */
-#define VECTOR_88         (tIsrFunc)&UnhandledInterrupt         /* 0x58 -    ivINT_Reserved88               unused by PE */
+#define VECTOR_88         (tIsrFunc)&UnhandledInterrupt         /* 0x58 -    ivINT_DAC1                     unused by PE */
 #define VECTOR_89         (tIsrFunc)&UnhandledInterrupt         /* 0x59 -    ivINT_ADC1                     unused by PE */
 #define VECTOR_90         (tIsrFunc)&UnhandledInterrupt         /* 0x5A -    ivINT_I2C2                     unused by PE */
 #define VECTOR_91         (tIsrFunc)&UnhandledInterrupt         /* 0x5B -    ivINT_CAN0_ORed_Message_buffer unused by PE */

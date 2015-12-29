@@ -6,11 +6,11 @@
 /*##                                   */
 /*##     Project   : MCUMathLib        */
 /*##                                   */
-/*##     Processor : MK64FN1M0VLL12    */
+/*##     Processor : MK64FN1M0VLQ12    */
 /*##                                   */
 /*##     Compiler  : GNU C Compiler    */
 /*##                                   */
-/*##     Date/Time : 2015-12-27, 16:46, # CodeGen: 3 */
+/*##     Date/Time : 2015-12-28, 15:02, # CodeGen: 9 */
 /*##                                   */
 /*##     Abstract  :                   */
 /*##                                   */
@@ -38,6 +38,7 @@ __stack_size = 0x0400;                 /* required amount of stack */
 
 MEMORY {
   m_interrupts (RX) : ORIGIN = 0x00000000, LENGTH = 0x00000198
+  m_text_00000198 (RX) : ORIGIN = 0x00000198, LENGTH = 0x00000268
   m_text      (RX) : ORIGIN = 0x00000410, LENGTH = 0x000FFBF0
   m_data_1FFF0000 (RW) : ORIGIN = 0x1FFF0000, LENGTH = 0x00010000
   m_data      (RW) : ORIGIN = 0x20000000, LENGTH = 0x00030000
